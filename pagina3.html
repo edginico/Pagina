@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/5.2/examples/carousel/ -->
+<html lang="es" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Plantilla de carrusel · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="./Plantilla de carrusel · Bootstrap v5.2_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./Plantilla de carrusel · Bootstrap v5.2_files/carousel.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./Plantilla de carrusel · Bootstrap v5.2_files/translateelement.css"></head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Carrusel</font></font></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enlace</font></font></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desactivado</font></font></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Búsqueda">
+          <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Búsqueda</font></font></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Diapositiva 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Diapositiva 2" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Diapositiva 3" class="active" aria-current="true"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejemplo de titular.</font></font></h1>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Algún contenido de marcador de posición representativo para la primera diapositiva del carrusel.</font></font></p>
+            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Regístrate hoy</font></font></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otro ejemplo de titular.</font></font></h1>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Algún contenido de marcador de posición representativo para la segunda diapositiva del carrusel.</font></font></p>
+            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aprende más</font></font></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Uno más por si acaso.</font></font></h1>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Algunos contenidos de marcador de posición representativos para la tercera diapositiva de este carrusel.</font></font></p>
+            <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Explorar galería</font></font></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">próximo</font></font></span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bóveda</font></font></h2>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Algún contenido de marcador de posición representativo para las tres columnas de texto debajo del carrusel. </font><font style="vertical-align: inherit;">Esta es la primera columna.</font></font></p>
+        <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver detalles "</font></font></a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bóveda</font></font></h2>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otro fragmento emocionante de contenido de marcador de posición representativo. </font><font style="vertical-align: inherit;">Esta vez, hemos pasado a la segunda columna.</font></font></p>
+        <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver detalles "</font></font></a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 class="fw-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bóveda</font></font></h2>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y, por último, esta, la tercera columna de contenido de marcador de posición representativo.</font></font></p>
+        <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver detalles "</font></font></a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encabezado del primer reportaje. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Te dejará boquiabierto.</font></font></span></h2>
+        <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Un gran contenido de marcador de posición para el primer vídeo aquí. </font><font style="vertical-align: inherit;">Imagina una prosa emocionante aquí.</font></font></p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Oh sí, es tan bueno. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ver por ti mismo.</font></font></span></h2>
+        <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Otro largometraje? </font><font style="vertical-align: inherit;">Por supuesto. </font><font style="vertical-align: inherit;">Más contenido de marcador de posición aquí para darle una idea de cómo funcionaría este diseño con algún contenido real del mundo real en su lugar.</font></font></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y por último, este. </font></font><span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mate.</font></font></span></h2>
+        <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y sí, este es el último bloque de contenido de marcador de posición representativo. </font><font style="vertical-align: inherit;">Una vez más, no está destinado a ser leído realmente, simplemente aquí para darle una mejor vista de cómo se vería esto con algún contenido real. </font><font style="vertical-align: inherit;">Tu contenido.</font></font></p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Volver arriba</font></font></a></p>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2017–2022 Company, Inc. · </font></font><a href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidad</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> · </font></font><a href="https://getbootstrap.com/docs/5.2/examples/carousel/#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Términos</font></font></a></p>
+  </footer>
+</main>
+
+
+    <script src="./Plantilla de carrusel · Bootstrap v5.2_files/bootstrap.bundle.min.js.descarga" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Plantilla de carrusel · Bootstrap v5.2_files/translate_24dp.png" width="20" height="20" alt="Google Traductor de Google"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texto original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Sugiere una traducción mejor</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+      
+  
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
